@@ -211,6 +211,81 @@ ul > li {
   letter-spacing: 0.01575rem;
   padding-right: 7.44rem;
 }
+/* End of main body boxes */
+/* Main last section */
+.main-last-section {
+  display: flex;
+  margin: 6.25rem 10.31rem;
+  align-items: center;
+}
+.last-right {
+  margin-left: 6rem;
+}
+.last-h1,
+.last-p {
+  margin-bottom: 1rem;
+}
+.last-h1 {
+  color: #0a0826;
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 3.75rem; /* 157.895% */
+}
+.last-left {
+  width: 90%;
+}
+.last-left img {
+  width: 100%;
+}
+
+.last-p {
+  color: #6c6c6c;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem; /* 175% */
+}
+.last-btn {
+  border-radius: 0;
+  padding: 1 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* End of last section */
+/* Footer Section */
+footer {
+  padding: 3.13rem 0;
+  background: #0a0826;
+  color: white;
+  text-align: center;
+}
+.footer-h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.copyright {
+  color: #d9dbe1;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 171.429% */
+}
+.rigths {
+  color: #d9dbe1;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 171.429% */
+}
+.footer-img {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 /* For Mobile Screen */
 @media screen and (max-width: 576px) {
   /* Nav styles */
@@ -362,8 +437,7 @@ ul > li {
   .name {
     color: var(--text-color-900);
     font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2.5rem; /* 142.857% */
   }
   .price {
@@ -391,6 +465,45 @@ ul > li {
     font-weight: 700;
     line-height: 143%; /* 1.25125rem */
     letter-spacing: 0.01575rem;
-    padding-right: 7.44rem;
+  }
+  /* End of body boxes */
+  /* last section */
+  .main-last-section {
+    flex-direction: column-reverse;
+    margin: 1rem;
+  }
+
+  .last-right {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .last-h1,
+  .last-p {
+    margin-bottom: 1rem;
+  }
+  .last-h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .last-left {
+    width: 90%;
+  }
+  .last-left img {
+    width: 100%;
+  }
+
+  .last-p {
+    color: #6c6c6c;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75rem; /* 175% */
+  }
+  .last-btn {
+    margin-bottom: 1.8rem;
   }
 }
