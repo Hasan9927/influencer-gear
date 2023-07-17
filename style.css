@@ -3,10 +3,12 @@
 /* font-family: 'Poppins', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 /* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
 :root {
   --theme-color: #e02c6d;
   --text-color-900: #18191f;
-  --doller-color-900: rgba(0, 0, 0, 0.87);
+  --text-color-800: rgba(0, 0, 0, 0.87);
 }
 * {
   margin: 0;
@@ -126,6 +128,89 @@ ul > li {
   border: none;
 }
 
+/* Main body boxes */
+.main-body-boxes {
+  margin-left: 12.25rem;
+  margin-right: 12.25rem;
+}
+.main-h1 {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 4.375rem; /* 250% */
+  margin-bottom: 1.88rem;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.88rem;
+  /* margin-left: 12.25rem;
+  margin-right: 12.25rem; */
+}
+.h6 {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+  align-items: center;
+  margin-top: 3rem;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.h6 img {
+  display: flex;
+}
+.box {
+  padding: 1.06rem 0.94rem 1.06rem 0.87rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.box .product-img {
+  width: 100%;
+}
+.rating {
+  display: flex;
+  gap: 0.65rem;
+}
+.name {
+  color: var(--text-color-900);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.5rem; /* 142.857% */
+}
+.price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.25rem */
+}
+.rating-in-text {
+  color: #5e6366;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; /* 157.143% */
+  letter-spacing: 0.00625rem;
+}
+.box-description {
+  color: #787885;
+  font-family: 'Inter';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%; /* 1.25125rem */
+  letter-spacing: 0.01575rem;
+  padding-right: 7.44rem;
+}
 /* For Mobile Screen */
 @media screen and (max-width: 576px) {
   /* Nav styles */
@@ -154,7 +239,7 @@ ul > li {
     color: white;
     font-weight: 400;
   }
-
+  /* End of Nav section */
   /* Banner Section */
   .banner-section {
     display: flex;
@@ -220,7 +305,7 @@ ul > li {
   .image-optimize {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
     justify-content: space-evenly;
     padding: 1rem 3.5rem;
   }
@@ -231,24 +316,81 @@ ul > li {
     display: flex;
     width: 70%;
   }
-
-  /* .image-optimize {
+  /* End of Banner Section */
+  /* Main Body Boxes */
+  .main-body-boxes {
+    margin: 2.5rem;
+  }
+  .main-h1 {
+    margin: 0;
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .box-container {
     display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+  }
+  .h6 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem 3.5rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
-  .image-optimize img {
+  .h6 img {
     display: flex;
   }
-  .hr-style {
-    background-image: linear-gradient(
-      135deg,
-      rgba(192, 204, 218, 0.1) 0%,
-      rgba(192, 204, 218, 0.6) 50.38%,
-      rgba(192, 204, 218, 0.1) 100%
-    );
-    height: 1.5px;
-    border: none;
-  } */
+  .box {
+    margin-bottom: 1.5rem;
+    padding: 1.06rem 0.94rem 1rem 0.88rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  .box .product-img {
+    width: 100%;
+  }
+  .rating {
+    display: flex;
+    gap: 0.65rem;
+  }
+  .name {
+    color: var(--text-color-900);
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 142.857% */
+  }
+  .price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.25rem */
+  }
+  .rating-in-text {
+    color: #5e6366;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.375rem; /* 157.143% */
+    letter-spacing: 0.00625rem;
+  }
+  .box-description {
+    color: #787885;
+    font-family: 'Inter';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%; /* 1.25125rem */
+    letter-spacing: 0.01575rem;
+    padding-right: 7.44rem;
+  }
 }
